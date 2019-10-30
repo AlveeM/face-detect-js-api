@@ -25,6 +25,7 @@ app.use(cors());
 app.get('/', (req, res) => {
     // res.send(database.users);
     res.send("It's Working!");
+    console.log(process.env.API_CLARIFAI)
 })
 
 app.post('/signin', (req, res) => {
